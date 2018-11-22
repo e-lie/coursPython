@@ -2,20 +2,21 @@
 // ---------------------------------------------------------------------------
 
 //$primary          : #3F51B5;
-$primary          : #3FC1F5;
-$primary-bg       : #0F61B5;
-$secondary        : #40F040;
+$primary        : #E24F25;
+$primary-bg        : #79012f;
+$secondary          : #F5AE3F;
 $tertiary         : #D5D5D5;
 $light            : #FFF;
 $dark             : #333;
 $text-dark        : #212121; 
 $text-light       : $light;
+$text-strong      : #E8FF67;
 $code-background  : #F8F8D8;
 $overlay          : transparentize(#000, .5);
-$font-size        : 28px;
+$font-size        : 26px;
 $font-size-impact : 128px;
-$font             : Arial, Helvetica, sans-serif;
-$font-title       : Arial, Helvetica, sans-serif;
+$font             : Noto Sans, Arial, Helvetica, sans-serif;
+$font-title       : Noto Sans, Arial, Helvetica, sans-serif;
 $font-fixed       : 'Lucida Console', Monaco, monospace;
 $margin           : 20px;
 $iframe-scale     : 1.5;
@@ -42,7 +43,10 @@ pre, code {
   padding: 0.1em;
 }
 a, a:visited, a:hover, a:active { color: $text-dark; }
-img { vertical-align: inherit; }
+img {
+  vertical-align: inherit;
+  max-width: 100%;
+}
 blockquote {
   border-left: 8px solid;
   padding-left: .5em;
@@ -69,6 +73,19 @@ blockquote {
   color: $text-light;
   background-size: cover;
 }
+
+.remark-slide-content h1 { 
+  font-weight: 300;
+}
+.remark-slide-content h2 { 
+  font-size: 38px;
+  font-weight: 300;
+}
+.remark-slide-content h3 { 
+  font-size: 32px;
+  font-weight: 32px;
+}
+.remark-slide-content strong {  color: $text-strong }
 
 .remark-slide-number {
   color: $text-light;

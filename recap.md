@@ -137,7 +137,7 @@ def une_fonction(n):
 | `L = ["a", 2, 3.14 ]`    | Liste (suite ordonnée d'éléments)                          |
 | `S = { "a", "b", 3 }`    | Ensemble (éléments unique, désordonné)                     |
 | `D = { "a": 2, "b": 4 }` | Dictionnaire (ensemble de clé-valeurs, avec clés uniques)  |
-| `T = (1,2,3)`            | Liste (suite d'élément non-mutables)                       |
+| `T = (1,2,3)`            | Tuple ou n-uplet (suite d'élément non-mutables)                       |
 
 | Syntaxe          | Description                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------- |

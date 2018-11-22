@@ -31,11 +31,22 @@ print(reponse)
 - 98.2/6
 - ((7×9)⁴)/6
 
+----------
+
+- `>>> 567 * 72 -> 16.366666666666667`
+- `>>> 33**4 -> 2625493.5
+- `>>> 98.2 / 6 -> 16.366666666666667`
+- `>>> (7 * 9)**4 / 6 -> 2625493.5`
+
 
 ## 2. Interactivité
 
 2.1.1 : Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il
 aura dans deux ans.
+
+---
+
+
 
 2.1.2 : Même chose, mais en demandant l'année de naissance (approximativement,
 sans tenir compte du jour et mois de naissance...)
@@ -55,6 +66,24 @@ sans tenir compte du jour et mois de naissance...)
 caractère sur 80 caractères. Par exemple `print(centrer(Pikachu)) affichera :
 ```
 |                                    Pikachu                                  |
+```
+
+-------
+
+```python
+def centrer(texte):
+    
+    longueur_part_1 = len(texte) // 2
+    longueur_part_2 = len(texte) // 2 + 1
+    
+    decalage1 = 40 - longueur_part_1 - 1
+    decalage2 = 40 - longueur_part_2 - 1
+    
+    resultat = '|' +  (decalage1 * ' ') + texte + (decalage2 * ' ') + '|'
+    return resultat
+
+print(centrer('Pikachu'))
+print(len(centrer('Pikachu')))
 ```
 
 4.1.2 : Ajouter un argument optionnel pour gérer la largeur au lieu du "80"

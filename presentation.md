@@ -24,50 +24,36 @@ class: impact
 
 ---
 
-## À propos de moi
+# À propos de moi
 
-.col-4[
 .center[
-![](img/me.jpg)
-]
+
+## Elie Gavoty
+
 ]
 
-.col-8[.center[
-<br>
-<br>
-<br>
-`https://github.com/alexAubin`
-<br>
-<br>
-`alex.aubin@mailoo.org`
-<br>
-<br>
-<br>
-<br>
+.col-4[.center[
+Développeur Python, Devops
+</br>
+</br>
+![](img/python.png)
 ]]
 
 .col-4[.center[
-Ingénieur/Physicien
-</br>
-</br>
-![](img/particles.jpg)
-]]
+Doctorant en philosophie
 
-.col-4[.center[
-Dev / hacktiviste?
-
-![](img/yunohost.jpg)
+![](img/python.png)
 ]]
 
 .col-4[.center[
 Formateur
 
-![](img/python_arduino.jpg)
+![](img/python.png)
 ]]
 
 ---
 
-## À propos de vous
+# À propos de vous
 
 ---
 
@@ -205,15 +191,16 @@ class: impact
 
 # Python
 
-.center[![](img/python.png)]
+.col-4[![](img/python.png)]
 
+.col-8[
 - Versatile
 - "Moyen-niveau"
 - Syntaxe légère, lisible, facile à prendre en main
 - Interprété, "scripting"
 - Prototypage rapide
 - Grande communauté
-- De plus en plus répandu (?)
+- De plus en plus répandu (?)]
 
 ---
 
@@ -293,21 +280,21 @@ class: impact
 
 
 
-# Setup
+# Nos outils
 
-- VM Linux
+- Machine virtuelle (VM) Ubuntu
 - Python (3.x)
 
-## Pour débutter
+## Pour coder durant cette formation
 
-- **Thonny** (`pip3 install thonny`)
+- **Thonny** : pour débutants, il montre comment s'exécute le code
+- **VSCode** : un éditeur puissant et assez simple d'accès qui intègre facilement git
 
-## Plus tard
+## Autres éditeur...
 
 - **Vim** (éditeur en console pour ninjas)
-- **Atom** (IDE relativement minimaliste, épuré et extensible)
 - **Pycharm** (IDE très gros qui fait même le café)
-- ???
+- ... plein d'autres
 
 ---
 
@@ -385,6 +372,10 @@ x = 3.14   # ré-assigne la variable avec une autre valeur
 y = x + 2  # déclare une autre variable y, à partir du contenu de x
 print(y)   # affichage du contenu de y
 ```
+
+---
+
+# 1. Les variables
 
 ## 1.4 Restriction sur le nommage
 
@@ -521,8 +512,8 @@ class: impact
 ### Construction à partir de données, avec `format`
 
 ```python
-"Je m'appelle {name} et j'ai {age} ans".format(name="Alex", age=28)
-"My name is {name} and I am {age} y.o.".format(name="Alex", age=28)
+"Je m'appelle {name} et j'ai {age} ans".format(name="Elie", age=28)
+"My name is {name} and I am {age} y.o.".format(name="Elie", age=28)
 ```
 
 ---
@@ -702,7 +693,6 @@ distance(1, 2, 3)
 distance(1, dy=2)
 distance(1, dz=3)
 distance(1, dy=2, dz=3)
-distance(1, dz=3, dy=2)
 ```
 
 ---

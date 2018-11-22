@@ -162,7 +162,7 @@ fonction `pokemon("pikachu")`
 
 - Gérer la réception de la requête POST dans Flask avec ce type de syntaxe : 
 
-```
+```python
 from flask import request
 
 @app.route('/new', methods=['GET', 'POST'])
