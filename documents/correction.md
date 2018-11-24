@@ -82,8 +82,8 @@ def centrer(texte):
     resultat = '|' +  (decalage1 * ' ') + texte + (decalage2 * ' ') + '|'
     return resultat
 
-print(centrer('Pikachu'))
-print(len(centrer('Pikachu')))
+print(centrer('Pikachu')) # affiche le texte centré sur 80 caractère
+print(len(centrer('Pikachu'))) # affiche la longueur du résultat pour vérifier qu'elle fait bien 80
 ```
 
 4.1.2 : Ajouter un argument optionnel pour gérer la largeur au lieu du "80"
@@ -132,8 +132,6 @@ la largueur demandée. Dans ce cas, tronquer le texte. Par exemple :
 ```
 
 
-
-
 ## 6. Exceptions, assertions
 
 
@@ -147,11 +145,6 @@ fonctions certaines hypothèses faites, comme :
 - la longueur doit être un entier positif ou égal à -1
 - le caractère d'encadrement doit être un caractère (chaine de longueur 1) ou vide
 - le texte donné doit effectivement être une chaîne de caractère
-
-
-
-
-
 
 
 ## 7. Boucles

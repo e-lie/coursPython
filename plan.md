@@ -20,6 +20,7 @@ layout: true
 
 ## Partie 2 : Les bases de git (1 jours ?)
 - git clone, diff et commit
+- Créer un compte sur une forge logiciel et démarre un projet
 - Gérer les commits (suppression, revenir en arrière)
 
 ---
@@ -44,5 +45,8 @@ layout: true
 - récupérer un dépôt de code avec `git clone`
   - modifier un fichier puis `git diff`
   - `git status`
+  - `git add`, `git add -A`
+  - `git rm`
+  - `git commit -m "description"
 
 - créer un dépôt et l'uploader sur framagit
