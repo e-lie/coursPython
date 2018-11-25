@@ -208,6 +208,62 @@ class: impact
 
 - DevOps oriented
 
+ ---
+
+# Python dans la vraie vie
+
+.center[Dropbox]
+
+.center[![](img/dropbox.png)]
+
+---
+
+# Python dans la vraie vie
+
+.center[Atom]
+
+.center[![](img/atom.png)]
+
+---
+
+# Python dans la vraie vie
+
+.center[Eve online]
+
+.center[![](img/eveonline.jpg)]
+
+---
+
+# Python dans la vraie vie
+
+.center[Matplotlib]
+
+.center[![](img/matplotlib.png)]
+
+---
+
+# Python dans la vraie vie
+
+.center[Blender]
+
+.center[![](img/blender.jpg)]
+
+---
+
+# Python dans la vraie vie
+
+.center[OpenERP / Odoo]
+
+.center[![](img/odoo.jpg)]
+
+---
+
+# Python dans la vraie vie
+
+.center[Tartiflette]
+
+.center[![](img/tartiflette.png)]
+
 ---
 
 # Python history
