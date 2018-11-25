@@ -111,7 +111,7 @@ print(y)   # affichage du contenu de y
 ```python
 reponse = 42      # Entier / integer               / int
 pi = 3.1415       # Réel                           / float
-prenom = "Alex"   # Chaîne de caractère (string)   / str
+prenom = "Elie"   # Chaîne de caractère (string)   / str
 oui = True        # Booléen                        / bool
 ```
 

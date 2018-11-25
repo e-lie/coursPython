@@ -20,7 +20,7 @@ class: impact
 
 class: impact
 
-(Première chose qu'on dit avec languange informatique)
+(Première chose qu'on dit avec un langage informatique)
 
 # Hello, world!
 
@@ -59,60 +59,67 @@ Formateur: Python, Ansible, Elasticsearch
 
 # À propos de vous
 
+## Parlez moi des épisodes précédents.
+
 ---
 
 # Enseigner et apprendre la programmation
 
-#### (Mauvaises nouvelles)
+## (Mauvaises nouvelles)
 
-- Abstrait
-- Booooring exercices
+- Abstract and Sometimes booooring exercices.
+    - *Mais c'est les fondamentaux !*
 - Disparité de vitesses d'apprentissage
-- Rien ne remplace l'expérience..
-- Eloigné du taf de "la vraie vie" :
-    - Analyse, architecture, UX, debugging, refactoring, tests, VCS, ...
+- Rien ne remplace l'expérience... En fait ça prend des mois d'être à l'aise.
+- Finalement assez éloigné du "vrai" travail d'entreprise (mais absolument nécessaire) :
+    - != Analyse, architecture, UX, debugging, refactoring, tests, VCS, ...
+    - la programmation est la source de l'automatisation et de l'autonomie dans votre carrière informatique.
 
 ---
 
 # Enseigner et apprendre la programmation
 
-#### (Bonnes nouvelles)
+## (Bonnes nouvelles)
 
-- On a du temps
 - Je suis payé pour répondre à vos questions \o/
-- Vous montrer l'essentiel et l'utile
-- Exercices ludiques ?
-- Priorité aux moins rapides
-- Devenir architecte du cyberespace
+- J'ai essayé de faire des exercices plutôt ludiques ..?
+- Je vais m'adapter aux différentes vitesses.
+- On va se mettre dans une ambiance d'entreprise en utilisant gitlab pour les 3 derniers jours.
+- DevOps = Devenir architecte du cyberespace
 
 ---
 
 # Objectifs
 
-Transmettre :
-
-- Des bases solides et une vue globale
-- De l'enthousiasme !
-- Des bonnes pratiques ?
-- Du "pragmatisme" et du fun ?
+## - Des bases solides de programmation et une vue globale
+## - De l'enthousiasme et des bonnes pratiques ?
+## - Une méthodologie réaliste avec gitlab.
 
 ---
 
-## Fonctionnement du cours
+# Fonctionnement du cours
 
-Alternances entre explications théoriques sur une notion donnée
+Alternances entre explications théoriques sur une notion donnée...
 
-et mise en application sur des exercices. 
+... et mise en application sur des exercices.
 
-## Évaluation
+---
 
-- QCM et bouts de programmes à compléter
-- Basé sur des cas et erreurs "courantes" vues dans les exercices
+# Python **ET** Git ensemble.
+
+- C'est super pour apprendre **Git en contexte**.
+- On va apprendre à coder du **Python** dans **Gitlab**, qui est très **utilisé en entreprise** pour **collaborer**.
+
+## Doublement pratique !
 
 ---
 
 # Logistique ?
 
+- Les cours sont mis à dispositions chaque soir sur : **https://ptych.net/documents**
+- Vous allez sauvegarder vos exercices sur votre dépot git en ligne... qu'on va créer dans deux jours.
+- Machines virtuelles linux ? Partage Réseau ?
+- Évaluation ?
 
 ---
 
@@ -144,6 +151,14 @@ class: impact
 
 ---
 
+class: impact
+
+# Machines ain't smart.
+
+# You are !
+
+---
+
 # La programmation : cuisiner de l'information
 
 * Préparer **des outils** et **des ingrédients**
@@ -165,18 +180,33 @@ class: impact
 
 ---
 
-# Python
+# Python 
 
-.col-4[![](img/python.png)]
+.col-3[.col-10[![](img/python2.png)]]
+--
 
-.col-8[
-- Versatile
+- **Versatile !!! ** = un des langages les plus généralistes
+--
+
 - "Moyen-niveau"
+--
+
 - Syntaxe légère, lisible, facile à prendre en main
-- Interprété, "scripting"
-- Prototypage rapide
+--
+
+- Interprété, "scripting" = rapide à mettre en oeuvre mais dépendant d'un logiciel.
+--
+
+- Prototypage rapide = la glue du logiciel.
+--
+
 - Grande communauté
-- De plus en plus répandu (?)]
+--
+
+- De plus en plus répandu ! c'est la **mega hype**
+--
+
+- DevOps oriented
 
 ---
 
@@ -207,29 +237,19 @@ class: impact
 
 ---
 
-class: impact
-
-# Machines ain't smart.
-
-# You are !
-
----
-
 .center[![](img/brainMelting.jpg)]
 
 ---
 
-.center[![](img/clouds.jpg)]
+## .center[La programmation est une pratique *compliquée*]
+.col-3[</br>].col-6[![](img/clouds.jpg)].col-3[</br>]
 
----
-
-class: impact
-
-## Programming *is* complicated
+.col-12[.center[
 
 ## <br>
-## Don't be ashamed
-## of not understanding right away
+## Il n'y a rien de génant si vous ne comprenez pas les exercices dès le départ.
+
+]]
 
 ---
 

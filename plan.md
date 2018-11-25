@@ -13,40 +13,36 @@ layout: true
 
 # Plan
 
-## Partie 1 : Les  bases de la programmation avec python (~2 jours ?)
+## Partie 1 : Les  bases de la programmation avec python (~2jours)
+
+Cours python 1 à 7 et exercices:
 - Intro, variables, intéractivité, chaîne de caractère
 - Fonctions, conditions, boucles
-- Structures de données, fichiers, bibliothèque
 
-## Partie 2 : Les bases de git (1 jours ?)
-- git clone, diff et commit
-- Créer un compte sur une forge logiciel et démarre un projet
+## Partie 2 : Les bases de git (~1jours)
+
+Cours git 1ère partie:
+- Créer un nouveau dépôt
+- Explorer un dépôt existant
+- Découvrir une forge logicielle et démarrer un projet
 - Gérer les commits (suppression, revenir en arrière)
 
 ---
 
 # Plan
 
-## Partie 3 : Orienté objet, créer un jeu par groupe  (~1.5 jours ?)
-- Objets et classes en Python, Pygame
+## Partie 3 : Python intermédiaire, collaboration avec git  (~1.5jours)
+
+Cours python 8 à 10:
+- Structures de données, fichiers, bibliothèques
+
+Cours git 2e partie
 - Collaborer avec Gitlab : les branches et les merges
-- Application de tout ce que l'on a vu à un jeu vidéo
 
-## Partie 4 : Git avancé (~0.5 jours ?)
-- Explorer un dépôt pour suivre l'historique d'un projet
-- Rebase, réécrire l'histoire du dépôt
+## Partie 4 : Programmation Orientée Objet (~0.5jours)
 
-## Bonus ?
-- Des ProTips™ pour la vraie vie : Flask ? pdb ? Notions avancées ?
+Cours python 11 et 12 + TP personnaliser un jeu:
+- Objets et classes en Python, Pygame
+- Application à un petit jeu vidéo
 
 ---
-
-# Git
-- récupérer un dépôt de code avec `git clone`
-  - modifier un fichier puis `git diff`
-  - `git status`
-  - `git add`, `git add -A`
-  - `git rm`
-  - `git commit -m "description"
-
-- créer un dépôt et l'uploader sur framagit

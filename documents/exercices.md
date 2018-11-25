@@ -27,9 +27,9 @@ print(reponse)
 1.2: À l'aide de python, calculer le résultat des opérations suivantes :
 
 - 567×72
-- 33⁴
+- 33^4
 - 98.2/6
-- ((7×9)⁴)/6
+- ((7×9)^4)/6
 
 
 ## 2. Interactivité

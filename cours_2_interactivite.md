@@ -28,7 +28,7 @@ avec `input("message")`
 reponse = input("Combien font 6 fois 7 ?")
 ```
 
-N.B. : ce que renvoie `input()` est une chaîne de caractère !
+N.B. : ce que renvoie `input()` est une **chaîne de caractère !** (= du texte pas un entier)
 
 ---
 
