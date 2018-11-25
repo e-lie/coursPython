@@ -108,91 +108,29 @@ On va utiliser **les trois** car c'est nécessaires pour bien comprendre comment
 
 class: impact
 
-# Git, fonctions de base
+# Git, fonctionnement de base
 
 ---
 
-# Récuperer un dépôt sur une forge 
+# Créer un nouveau dépôt git avec votre code
 
-## $ `git clone <url>`
-
-### Exemple
-
-```
-$ git clone https://github.com/miguelgrinberg/flasky
-
-Clonage dans 'flasky'...
-remote: Enumerating objects: 897, done.
-remote: Total 897 (delta 0), reused 0 (delta 0), pack-reused 897
-Réception d'objets: 100% (897/897), 195.05 KiB | 846.00 KiB/s, fait.
-Résolution des deltas: 100% (497/497), fait.
-
-$ cd flasky
-
-flasky (git)-[master] $ 
-```
+vous être dans un dossier avec du code:
+- `git init` créé un dépôt
+- `git add` permet de suivre certains fichier
+- `git commit` permet valider vos modifications pour créer ce qu'on appelle un **commit** c'est-à-dire une étape validée du code.
+- `git status` et 'git log` permettent de suivre l'état du dépôt et la liste des commits.
 
 ---
 
-# Connaître l'état d'un dépôt
+class: impact
 
-## (git)-[master] $` git status`
-
-```bash
-Sur la branche master
-Votre branche est en avance sur 'origin/master' de 1 commit.
-  (utilisez "git push" pour publier vos commits locaux)
-
-Modifications qui ne seront pas validées :
-  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
-  (utilisez "git checkout -- <fichier>..." pour annuler les modifications dans la copie de travail)
-
-	modifié :         plan.md
-
-Fichiers non suivis:
-  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
-
-	git_1_intro_clone.md
-	img/git_diff.png
-	img/gitkraken.png
-	img/merge_3_versions.png
-
-aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
-```
+# Créer un nouveau dépot : Démonstration !
 
 ---
 
-# Connaître l'historique du dépôt
-   
-## (git)-[master] $` git log`
+#Git cycle des fichiers
 
-```bash
-commit 0d83d44e0f9e95e11a5ff5015a6a2b53eb06d44a (HEAD -> master)
-Author: Elie Gavoty <eliegavoty@free.fr>
-Date:   Fri Nov 23 15:20:12 2018 +0100
-
-    update toc with git
-
-commit 4be0d90677859ecbf143bf5770f2266f72afaf65 (origin/master, origin/HEAD)
-Author: Elie Gavoty <eliegavoty@free.fr>
-Date:   Thu Nov 22 18:51:43 2018 +0100
-
-    refacto cut & more
-
-commit 15b80bdd9ebb3966a17d5c9d323b6b8e6cfaa863
-Author: Elie Gavoty <eliegavoty@free.fr>
-Date:   Thu Nov 22 16:59:22 2018 +0100
-
-    slides custo 1
-```
+![](img/commit_cycle.png)
+![](img/git_file_statuses.png)
 
 ---
-
-# Afficher les modifications récentes du dépôt
-   
-## (git)-[master] $` git diff`
-
-![](img/git_diff.png)
-
----
-

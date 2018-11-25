@@ -67,7 +67,7 @@ print("Le troll a {n} hp".format(n=troll.hp))
 - Le mot clef `class`
 - `self` corresponds à l'instance / l'object (similaire à `this` dans d'autres
   langages)
-- `__init__` corresponds au constructeur
+- `__init__` corresponds au constructeur (la fonction appelée automatiquement à la création d'un objet)
 - J'instancie un objet avec `NomDeClasse()` (eventuellement des arguments)
 
 ---

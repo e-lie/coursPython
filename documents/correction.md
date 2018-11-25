@@ -267,9 +267,6 @@ shell de login (?) est `/bin/bash` dans `/etc/passwd`
 
 
 
-
-
-
 ## 10. Librairies
 
 Les énoncés des exercices suivants sont un peu plus compliqués et techniques que

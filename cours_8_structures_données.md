@@ -230,7 +230,7 @@ Les "list/dict comprehensions" sont des syntaxes particulière permettant de rap
 
 ### Exemple (dict comprehension)
 
-Carré des entiers impairs d'une liste
+Récupérer un dictionnaire de tous les utilisateur dont l'age est supérieur à 20.
 
 ```python
 { nom: age-20 for nom, age in ages.items() if age >= 20 }

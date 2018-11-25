@@ -57,6 +57,8 @@ caractère sur 80 caractères. Par exemple `print(centrer(Pikachu)) affichera :
 |                                    Pikachu                                  |
 ```
 
+Afficher également la longueur du résultat.
+
 4.1.2 : Ajouter un argument optionnel pour gérer la largeur au lieu du "80"
 fixé. Par exemple `print(centrer("Pikachu", 40)) affichera :`
 ```
@@ -102,7 +104,7 @@ la largueur demandée. Dans ce cas, tronquer le texte. Par exemple :
 ########
 ```
 
-
+Trouvez de nouvelles façon de faire bugger la fonction. Conclusion ?
 
 
 ## 6. Exceptions, assertions
@@ -122,9 +124,6 @@ fonctions certaines hypothèses faites, comme :
 
 
 
-
-
-
 ## 7. Boucles
 
 7.1.1 : Écrire une fonction qui, pour un nombre donné, renvoie la table de
@@ -138,23 +137,23 @@ Table du 7
  10 x 7 = 70
 ```
 
-7.1.2 : Cette fois, passer le nombre en argument. La fonction devient par
+7.2 : Cette fois, passer le nombre en argument. La fonction devient par
 exemple `table_multiplication(7)`
 
-7.1.3 : En utilisant cette fonction, afficher les tables de multiplication pour
+7.3 : En utilisant cette fonction, afficher les tables de multiplication pour
 tous les nombres entre 1 et 10.
 
-7.1.4 : Protéger l'accès à toute cette connaissance précieuse en demandant, au
+7.4 : Protéger l'accès à toute cette connaissance précieuse en demandant, au
 début du programme, un "mot de passe" jusqu'à ce que le bon mot de passe soit
 donné.
 
-7.2 : Écrire une fonction qui permet de déterminer si un nombre est premier. Par
+7.5 : Écrire une fonction qui permet de déterminer si un nombre est premier. Par
 exemple `is_prime(3)` renverra True, et `is_prime(10)` renverra False.
 
-7.3 : Écrire une fonction qui permet de générer les n premiers nombres de la
+7.6 : Écrire une fonction qui permet de générer les n premiers nombres de la
 suite de Fibonnaci
 
-7.4.1 : Jeu des allumettes
+7.7 : Jeu des allumettes
 
 Le jeu des allumettes est un jeu pour deux joueurs, où n allumettes sont
 disposées, et chaque joueur peut prendre à tour de rôle 1, 2 ou 3 allumettes. Le
@@ -176,7 +175,7 @@ perdant est celui qui se retrouve obligé de prendre la dernière allumette.
   jouer à tour de rôle jusqu'à ce qu'une condition de victoire soit détectée (il
   reste moins d'une allumette...) moins d'une allumette.
 
-7.4.2 : Intelligence artificielle
+7.8 : Intelligence artificielle
 
 Reprendre le jeu précédent et le modifier pour introduire une "intelligence"
 artificielle qui soit capable de jouer en tant que 2ème joueur. (Par exemple,
@@ -188,14 +187,10 @@ nombre d'allumettes que l'IA décide de prendre. Partager le fichier pour faire
 combattre les différentes IA dans l'arène !
 
 
-
-
-
-
 ## 8. Structures de données
 
 8.1.1 : Écrire une fonction qui retourne le plus grand élément d'une liste (ou
-d'un set) de nombres, et une autre fonction qui permet retourn le plus petit.
+d'un set) de nombres, et une autre fonction qui permet retourner le plus petit.
 Par exemple, `plus_grand([5, 9, 12, 6, -1, 4])` retournera 12.
 
 8.1.2 : Dans la fonction précédente, vérifier que l'argument donné est bien une
@@ -222,7 +217,6 @@ Chaque élément sera choisi aléatoirement dans une liste de choix possibles...
 
 
 
-
 ## 9. Fichiers
 
 9.1 Écrire une fonction qui prends un nom de fichier en argument et retourne
@@ -241,10 +235,6 @@ des chaînes de caractère pour identifier plus facilement les lignes vides)
 
 9.4 : Écrire une fonction qui trouve et retourne tous les utilisateurs dont le
 shell de login (?) est `/bin/bash` dans `/etc/passwd`
-
-
-
-
 
 
 
