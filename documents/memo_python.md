@@ -114,8 +114,9 @@ Les assertions permettent d'expliciter et de vérifier des suppositions faites
 dans le code :
 
 ```
+# Cette fonction fonctionne seulement pour des entiers premiers !
 def une_fonction(n):
-   assert isinstance(n, int) and is_prime(n), "Cette fonction fonctionne seulement pour des entiers premiers !"
+   assert isinstance(n, int) and is_prime(n)
 ```
 
 
