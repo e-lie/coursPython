@@ -1,0 +1,481 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Fix footnotes in tables (requires footnote package)
+\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{recapitulatif-des-syntaxes-de-base-en-python}{%
+\section{Recapitulatif des syntaxes ``de base'' en
+Python}\label{recapitulatif-des-syntaxes-de-base-en-python}}
+
+\hypertarget{demander-et-afficher-des-informations}{%
+\subsection{Demander et afficher des
+informations}\label{demander-et-afficher-des-informations}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Syntaxe & Description\tabularnewline
+\midrule
+\endhead
+\texttt{print("message")} & Affiche ``message'' dans la
+console\tabularnewline
+\texttt{v\ =\ input("message")} & Demande une valeur et la stocke dans
+\texttt{v}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{calculs}{%
+\subsection{Calculs}\label{calculs}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Syntaxe & Description\tabularnewline
+\midrule
+\endhead
+\texttt{a\ +\ b} & Addition de a b\tabularnewline
+\texttt{a\ -\ b} & Soustraction de a et b\tabularnewline
+\texttt{a\ /\ b} & Division de a par b\tabularnewline
+\texttt{a\ *\ b} & Multiplication de a par b\tabularnewline
+\texttt{a\ \%\ b} & Modulo (reste de division) de a par b\tabularnewline
+\texttt{a\ **\ b} & Exponentiation de a par b\tabularnewline
+\bottomrule
+\end{longtable}
+
+Toutes ces opérations peuvent être appliquées directement sur une
+variable via la syntaxe du type \texttt{a\ +=\ b} (additionner b à a et
+directement modifier la valeur de a avec le résultat).
+
+\hypertarget{types-de-variable-et-conversion}{%
+\subsection{Types de variable et
+conversion}\label{types-de-variable-et-conversion}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Syntaxe & Description\tabularnewline
+\midrule
+\endhead
+\texttt{type(v)} & Renvoie le type de \texttt{v}\tabularnewline
+\texttt{int(v)} & Converti \texttt{v} en entier\tabularnewline
+\texttt{float(v)} & Converti \texttt{v} en float\tabularnewline
+\texttt{str(v)} & Converti \texttt{v} en string\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{chauxeenes-de-caractuxe8res}{%
+\subsection{Chaînes de caractères}\label{chauxeenes-de-caractuxe8res}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.20\columnwidth}\raggedright
+Syntaxe\strut
+\end{minipage} & \begin{minipage}[b]{0.74\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine1\ +\ chaine2}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Concatène les chaînes de caractères \texttt{chaine1} et
+\texttt{chaine2}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine{[}n:m{]}}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Retourne les caractères de \texttt{chaine} depuis la position n à
+m\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine\ *\ n}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Retourne \texttt{chaine} concaténée \texttt{n} fois avec elle-meme\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{len(chaine)}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Retourne la longueur de \texttt{chaine}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine.replace(a,\ b)}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Renvoie \texttt{chaine} avec les occurences de \texttt{a} remplacées par
+\texttt{b}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine.split(c)}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Créé une liste à partir de \texttt{chaine} en la séparant par rapport au
+caractère \texttt{c}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{chaine.strip()}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+``Nettoie'' \texttt{chaine} en supprimant les espaces et
+\texttt{\textbackslash{}n} au début et à la fin\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.20\columnwidth}\raggedright
+\texttt{\textbackslash{}n}\strut
+\end{minipage} & \begin{minipage}[t]{0.74\columnwidth}\raggedright
+Représentation du caractère `nouvelle ligne'\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{fonctions}{%
+\subsection{Fonctions}\label{fonctions}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{def}\NormalTok{ ma_fonction(toto, tutu}\OperatorTok{=}\DecValTok{3}\NormalTok{):}
+\NormalTok{    une_valeur }\OperatorTok{=}\NormalTok{ toto }\OperatorTok{*} \DecValTok{6} \OperatorTok{+}\NormalTok{ tutu}
+    \ControlFlowTok{return}\NormalTok{ une_valeur}
+\end{Highlighting}
+\end{Shaded}
+
+Cette fonction : - a pour nom \texttt{ma\_fonction} ; - a pour argument
+\texttt{toto} et \texttt{tutu} ; - \texttt{tutu} est un argument
+optionnel avec comme valeur par défaut l'entier 3 ; -
+\texttt{une\_valeur} est une variable locale à la fonction ; - elle
+retourne \texttt{une\_valeur} ;
+
+\hypertarget{conditions}{%
+\subsection{Conditions}\label{conditions}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{if}\NormalTok{ condition:}
+\NormalTok{    instruction1}
+\NormalTok{    instruction2}
+\ControlFlowTok{elif}\NormalTok{ autre_condition:}
+\NormalTok{    instruction3}
+\ControlFlowTok{elif}\NormalTok{ encore_une_autre_condition:}
+\NormalTok{    instruction4}
+\ControlFlowTok{else}\NormalTok{:}
+\NormalTok{    instruction5}
+\NormalTok{    instruction6}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{opuxe9rateurs-de-conditions}{%
+\subsubsection{Opérateurs de
+conditions}\label{opuxe9rateurs-de-conditions}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Syntaxe & Description\tabularnewline
+\midrule
+\endhead
+\texttt{a\ ==\ b} & Egalité entre \texttt{a} et
+\texttt{b}\tabularnewline
+\texttt{a\ !=\ b} & Différence entre \texttt{a} et
+\texttt{b}\tabularnewline
+\texttt{a\ \textgreater{}\ \ b} & \texttt{a} supérieur (strictement) à
+\texttt{b}\tabularnewline
+\texttt{a\ \textgreater{}=\ b} & \texttt{a} supérieur ou égal à
+\texttt{b}\tabularnewline
+\texttt{a\ \textless{}\ \ b} & \texttt{a} inférieur (strictement) à
+\texttt{b}\tabularnewline
+\texttt{a\ \textless{}=\ b} & \texttt{a} inférieur ou égal à
+\texttt{b}\tabularnewline
+\texttt{cond1\ and\ cond2} & \texttt{cond1} et
+\texttt{cond2}\tabularnewline
+\texttt{cond1\ or\ cond2} & \texttt{cond1} ou
+\texttt{cond2}\tabularnewline
+\texttt{not\ cond} & négation de la condition
+\texttt{cond}\tabularnewline
+\texttt{a\ in\ b} & \texttt{a} est dans \texttt{b} (chaîne, liste,
+set..)\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{inline-ifs}{%
+\subsubsection{\texorpdfstring{Inline
+\texttt{ifs}}{Inline ifs}}\label{inline-ifs}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{parite }\OperatorTok{=} \StringTok{"pair"} \ControlFlowTok{if}\NormalTok{ n }\OperatorTok{%} \DecValTok{2} \OperatorTok{==} \DecValTok{0} \ControlFlowTok{else} \StringTok{"impair"}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exception-assertions}{%
+\subsection{Exception, assertions}\label{exception-assertions}}
+
+\texttt{try}/\texttt{except} permettent de tenter des instructions et
+d'attraper les exceptions qui peuvent survenir pour ensuite les gérer de
+manière spécifique :
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{try}\NormalTok{:}
+\NormalTok{   instruction1}
+\NormalTok{   instruction2}
+\ControlFlowTok{except}\NormalTok{ FirstExceptionTime:}
+\NormalTok{   instruction3}
+\ControlFlowTok{except} \PreprocessorTok{Exception} \ImportTok{as}\NormalTok{ e:}
+   \BuiltInTok{print}\NormalTok{(}\StringTok{"an unknown exception happened ! :"} \OperatorTok{+}\NormalTok{ e.}\BuiltInTok{str}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Les assertions permettent d'expliciter et de vérifier des suppositions
+faites dans le code :
+
+\begin{verbatim}
+def une_fonction(n):
+   assert isinstance(n, int) and is_prime(n), "Cette fonction fonctionne seulement pour des entiers premiers !"
+\end{verbatim}
+
+\hypertarget{boucles}{%
+\subsection{Boucles}\label{boucles}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.30\columnwidth}\raggedright
+Syntaxe\strut
+\end{minipage} & \begin{minipage}[b]{0.64\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{for\ i\ in\ range(0,\ 10)}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Itère sur \texttt{i} de 0 à 9\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{for\ element\ in\ stuff}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Itère sur tous les elements de stuff (liste, set, dictionnaire)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{for\ key,\ value\ in\ d.items()}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Itère sur toutes les clefs, valeurs du dictionnaire \texttt{d}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{while\ condition}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Répète un jeu d'instruction tant que \texttt{condition} est vraie\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{break}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Quitte immédiatement une boucle\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright
+\texttt{continue}\strut
+\end{minipage} & \begin{minipage}[t]{0.64\columnwidth}\raggedright
+Passe immédiatement à l'itération suivante d'une boucle\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{structures-de-donnuxe9es}{%
+\subsection{Structures de données}\label{structures-de-donnuxe9es}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.28\columnwidth}\raggedright
+Syntaxe\strut
+\end{minipage} & \begin{minipage}[b]{0.67\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\texttt{L\ =\ {[}"a",\ 2,\ 3.14\ {]}}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+Liste (suite ordonnée d'éléments)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\texttt{S\ =\ \{\ "a",\ "b",\ 3\ \}}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+Ensemble (éléments unique, désordonné)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\texttt{D\ =\ \{\ "a":\ 2,\ "b":\ 4\ \}}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+Dictionnaire (ensemble de clé-valeurs, avec clés uniques)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\texttt{T\ =\ (1,2,3)}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+Tuple ou n-uplet (suite d'élément non-mutables)\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+Syntaxe\strut
+\end{minipage} & \begin{minipage}[b]{0.79\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{L{[}i{]}}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+\texttt{i}-eme element d'une liste ou d'une tuple\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{L{[}i:{]}}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Liste de tous les éléments à partir du \texttt{i}-eme\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{L{[}i{]}\ =\ e}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Remplace le \texttt{i}-eme element par \texttt{e} dans une liste\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{L.append(e)}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Ajoute \texttt{e} à la fin de la liste \texttt{L}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{S.add(e)}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Ajoute \texttt{e} dans le set \texttt{S}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{L.insert(i,\ e)}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Insère \texttt{e} à la position \texttt{i} dans la liste
+\texttt{L}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+\texttt{chaine.join(L)}\strut
+\end{minipage} & \begin{minipage}[t]{0.79\columnwidth}\raggedright
+Produit une string à partir de \texttt{L} en intercallant la string
+\texttt{chaine} entre les elements\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{fichiers}{%
+\subsection{Fichiers}\label{fichiers}}
+
+Ouvrir et lire un fichier :
+
+\begin{verbatim}
+# Créé un contexte dans lequel le fichier
+# est ouvert en lecture en tant que 'f', 
+# et met son contenu dans 'content'
+
+with open("/un/fichier", "r") as f:  
+    content = f.readlines()          
+                                     
+\end{verbatim}
+
+Ecrire dans un fichier :
+
+\begin{verbatim}
+# Créé un contexte dans lequel le fichier
+# est ouvert en ré-écriture complète et
+# écrit le contenu de 'content' dedans.
+
+with open("/un/fichier", "w") as f:  
+    f.write(content)                 
+                                     
+\end{verbatim}
+
+(Le mode \texttt{\textquotesingle{}a\textquotesingle{}} (append) au lieu
+de \texttt{\textquotesingle{}w\textquotesingle{}} permet d'ouvrir le
+fichier pour ajouter du contenu à la fin plutôt que de le ré-écrire)
+
+\end{document}
