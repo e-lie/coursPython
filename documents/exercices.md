@@ -24,7 +24,7 @@ print(message)
 print(reponse)
 ```
 
-1.2: À l'aide de python, calculer le résultat des opérations suivantes :
+1.2: À l'aide de python calculer le résultat des opérations suivantes et l'afficher avec print():
 
 - 567×72
 - 33^4
@@ -34,28 +34,37 @@ print(reponse)
 
 ## 2. Interactivité
 
-2.1.1 : Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il
-aura dans deux ans.
+2.1 : Demander l'âge de l'utilisateur, puis calculer et afficher l'âge qu'il
+aura dans deux ans et afficher le résultat.
 
-2.1.2 : Même chose, mais en demandant l'année de naissance (approximativement,
+2.2 : Calculer l'age dans deux ans, mais cette fois en demandant l'année de naissance (approximativement,
 sans tenir compte du jour et mois de naissance...)
 
 ## 3. Chaînes de caractères
 
-3.1.1 : Demander un mot à l'utilisateur. Afficher la longueur du mot avec un message tel que "Ce mot fait X caractères !"
+3.1 : Demander un mot à l'utilisateur. Afficher la longueur du mot avec un message tel que "Ce mot fait X caractères !"
 
-3.1.2 : Remplacer les lettres A et E dans le mot, et afficher le mot ainsi modifié.
+3.2 : Remplacer les lettres A et E dans le mot, et afficher le mot ainsi modifié.
 
-3.1.3 : Encadrer le mot modifié avec des `####`.
+3.3 : Encadrer le mot modifié avec des `####` puis afficher le résultat sur trois lignes en une seule commande print() :
+  ```
+  #############
+  # votre_mot #
+  #############
+  ```
 
 
 ## 4. Fonctions
 
-4.1.1 : Ecrire une fonction `centrer` qui permet de centrer une chaîne de
+4.1 : Nous allons écrire une fonction `centrer` qui permet de centrer une chaîne de
 caractère sur 80 caractères. Par exemple `print(centrer(Pikachu)) affichera :
 ```
 |                                    Pikachu                                  |
 ```
+  - Afficher simplement le mot "Pikachu" centré sur 20 caractères (en comptant les |)
+  - Combien y a-t-il d'espaces ?
+  - Calculer la formule
+  - Définir la fonction `centrer` avec le prototype suivant `def centrer(text):`
 
 Afficher également la longueur du résultat.
 
@@ -114,6 +123,9 @@ Trouvez de nouvelles façon de faire bugger la fonction. Conclusion ?
 l'utilisateur, puis vérifie que la réponse est bien un entier pair. Si ce n'est
 pas le cas, déclencher une exception expliquant le problème (en francais). Si
 tout est bon, la fonction renvoie l'entier entré par l'utilisateur.
+  - écrire une version avec assert
+  - comment tester si un nombre est pair ? écriver
+
 
 6.2 : Reprendre les fonctions `centrer` et `encadrer` et vérifier au début des
 fonctions certaines hypothèses faites, comme :
@@ -126,7 +138,7 @@ fonctions certaines hypothèses faites, comme :
 
 ## 7. Boucles
 
-7.1.1 : Écrire une fonction qui, pour un nombre donné, renvoie la table de
+7.1 : Écrire une fonction qui, pour un nombre donné, renvoie la table de
 multiplication. Par exemple `print(table_du_7())` affichera :
 ```
 Table du 7
@@ -136,16 +148,24 @@ Table du 7
  [..]
  10 x 7 = 70
 ```
+  - 
 
 7.2 : Cette fois, passer le nombre en argument. La fonction devient par
 exemple `table_multiplication(7)`
 
-7.3 : En utilisant cette fonction, afficher les tables de multiplication pour
+7.3 : En utilisant cette fonction (sans la modifier), afficher les tables de multiplication pour
 tous les nombres entre 1 et 10.
 
 7.4 : Protéger l'accès à toute cette connaissance précieuse en demandant, au
 début du programme, un "mot de passe" jusqu'à ce que le bon mot de passe soit
 donné.
+  - Définir un mot de passe et le stocker dans une variable
+  - Demander un mot de passe à l'utilisateur et le stocker dans une autre variable
+  - Écrire la condition qui permet de modifier le mot de passe avec if
+  - Écrire une boucle infinie (qui ne s'arrête jamais). Ne pas lancer le programme en l'état sinon il sera bloqué
+  - Quelle instruction doit-on ajouter pour arrêter cette boucle ?
+  - En combinant la boucle et le test précédent, faire en sorte que la boucle s'arrête si le mot de passe est le bon.
+  - Ajouter la boucle des tables de multiplication à l'intérieur de ce dispositif pour afficher les tables si le mot de passe est bon et sortir de la boucle.
 
 7.5 : Écrire une fonction qui permet de déterminer si un nombre est premier. Par
 exemple `is_prime(3)` renverra True, et `is_prime(10)` renverra False.

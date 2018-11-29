@@ -8,3 +8,4 @@ dist
 *.log
 *.out
 *.synctex.gz
+.mypy_cache

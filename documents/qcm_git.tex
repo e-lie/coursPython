@@ -1,0 +1,253 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\date{}
+
+\begin{document}
+
+\hypertarget{pruxe9nom-______________________}{%
+\subsubsection{Prénom :
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}\label{pruxe9nom-______________________}}
+
+\hypertarget{nom-______________________}{%
+\subsubsection{Nom :
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}\label{nom-______________________}}
+
+\hypertarget{initiation-uxe0-git-questionnaire}{%
+\section{Initiation à Git :
+questionnaire}\label{initiation-uxe0-git-questionnaire}}
+
+\hypertarget{entourez-la-ou-les-bonnes-ruxe9ponses.}{%
+\subsection{\texorpdfstring{Entourez la ou \emph{LES} bonnes
+réponses.}{Entourez la ou LES bonnes réponses.}}\label{entourez-la-ou-les-bonnes-ruxe9ponses.}}
+
+\hypertarget{question-1}{%
+\subsubsection{Question 1}\label{question-1}}
+
+Qu'est-ce qu'un commit ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. Une étape validée du code qui apparaît dans l'historique du dépôt.
+\item
+  B. L'un des multiples historiques contenus dans un dépôt git.
+\item
+  C. N'importe quelle modification récente faite sur un des fichiers du
+  dépôt.
+\end{itemize}
+
+\hypertarget{question-2}{%
+\subsubsection{Question 2}\label{question-2}}
+
+Comment connaître l'état courant d'un dépôt ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. \texttt{git\ add}
+\item
+  B. \texttt{git\ checkout}
+\item
+  C. \texttt{git\ status}
+\item
+  D. \texttt{git\ branch}
+\end{itemize}
+
+\hypertarget{question-3}{%
+\subsubsection{Question 3}\label{question-3}}
+
+Qu'est-ce que HEAD ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. Le serveur où on pousse son code.
+\item
+  B. Un curseur pointant sur un commit qu'on peut déplacer avec
+  \texttt{git\ checkout}.
+\item
+  C. Une interface pour utiliser git.
+\end{itemize}
+
+\hypertarget{question-4}{%
+\subsubsection{Question 4}\label{question-4}}
+
+Une forge logicielle comme framagit est :
+
+\begin{itemize}
+\tightlist
+\item
+  A. Une plateforme alternative qui remplace git.
+\item
+  B. Une plateforme pour partager du code en ligne.
+\item
+  C. Une plateforme de tutoriels pour apprendre la programmation.
+\item
+  D. Une plateforme utile pour collaborer en entreprise.
+\end{itemize}
+
+\hypertarget{question-5}{%
+\subsubsection{Question 5}\label{question-5}}
+
+Git permet de :
+
+\begin{itemize}
+\tightlist
+\item
+  A. Gérer plusieurs versions du code d'un logiciel/script
+\item
+  B. Corriger automatiquement du code
+\item
+  C. Explorer l'historique du code d'un logiciel
+\item
+  D. Obtenir de l'aide sur la syntaxe en Python
+\end{itemize}
+
+\hypertarget{question-6}{%
+\subsubsection{Question 6}\label{question-6}}
+
+Où sont cachés les versions précédentes des fichiers dans git ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. Dans Gitlens.
+\item
+  B. Dans un dossier invisible .git pour chaque dépôt.
+\item
+  C. Dans le dossier /etc.
+\end{itemize}
+
+\hypertarget{question-7}{%
+\subsubsection{Question 7}\label{question-7}}
+
+Pour changer de branche on utilise:
+
+\begin{itemize}
+\tightlist
+\item
+  A. \texttt{git\ reflog\ \textless{}nom\ de\ la\ branche\textgreater{}}
+\item
+  B.
+  \texttt{git\ checkout\ \textless{}nom\ de\ la\ branche\textgreater{}}
+\item
+  C. \texttt{git\ clone\ \textless{}nom\ de\ la\ branche\textgreater{}}
+\end{itemize}
+
+\hypertarget{question-8}{%
+\subsubsection{Question 8}\label{question-8}}
+
+Habituellement, quel est le nom de la branche principale d'un dépôt ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. \texttt{master}
+\item
+  B. \texttt{feature}
+\item
+  C. \texttt{main}
+\end{itemize}
+
+\hypertarget{question-9}{%
+\subsubsection{Question 9}\label{question-9}}
+
+Une branche est :
+
+\begin{itemize}
+\tightlist
+\item
+  A. Une nouvelle modification ajoutée à un dépôt
+\item
+  B. Une ligne d'historique du dépôt
+\item
+  C. Une opération de fusion
+\end{itemize}
+
+\hypertarget{question-10}{%
+\subsubsection{Question 10}\label{question-10}}
+
+Comment savoir quelles modifications ont été apportées lors du dernier
+commit ?
+
+\begin{itemize}
+\tightlist
+\item
+  A. Utiliser \texttt{git\ diff\ HEAD\ HEAD\textasciitilde{}1}.
+\item
+  B. Utiliser \textbf{gitLens} dans VSCode avec la vue historique.
+\item
+  C. Utiliser \emph{Thonny} pour debugger le code.
+\end{itemize}
+
+\hypertarget{question-11}{%
+\subsubsection{Question 11}\label{question-11}}
+
+Une merge request sert à :
+
+\begin{itemize}
+\tightlist
+\item
+  A. Créer une discussion avec des collègues sur le code d'une fonction.
+\item
+  B. Faciliter la vérification collaborative du code.
+\item
+  C. Corriger automatiquement le code de votre nouvelle fonction.
+\item
+  D. Tester automatiquement le code ajouté.
+\end{itemize}
+
+\end{document}

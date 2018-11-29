@@ -208,7 +208,7 @@ class: impact
 
 - DevOps oriented
 
- ---
+---
 
 # Python dans la vraie vie
 
